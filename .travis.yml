@@ -16,7 +16,7 @@ before_script:
 
 
 script: 
-  - hexo clean && hexo g && hexo d 
+  - hexo clean && hexo g
 
   - cd ./public
   - git init

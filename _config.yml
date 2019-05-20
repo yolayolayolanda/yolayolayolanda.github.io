@@ -79,7 +79,7 @@ theme: apollo
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: repo-url # git@github.com:yolayolayolanda/yolayolayolanda.github.io.git
+  repo: git@github.com:yolayolayolanda/yolayolayolanda.github.io.git
   branch: master
 
 search:
