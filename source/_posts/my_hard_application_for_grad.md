@@ -5,7 +5,7 @@ categories: tittle-tattle
 toc: true
 ---
 I disappeared for about one month. During most of these period time, I was running around in circles for my application for graduate application. 
-
+<!-- more -->
 I'm going to apply for universities in America next semester and I'm now lack of research experiences. So in early March, I tried to seek for a summer research opportunity. 
 
 I know it won't be a piece of cake, but I didn't expect it to be quite a painful memory. I sent about 60 letters. Just like stones dropped into the sea, most of them received nothing. But to my relief, finally I got a few positive responses. After some short interviews, I got 4 offers and chose the one that I thought would be the most appropriate for my research direction. 
