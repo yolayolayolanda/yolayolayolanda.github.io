@@ -11,13 +11,13 @@ marked: true
 
 <!-- more -->
 
-In the book ***[Networks, Crowds, and Markets: Reasoning about a Highly Connected World](http://www.cs.cornell.edu/home/kleinber/networks-book/)***, the authors emphasized two main things of "connectedness": one is underlying structure of the network and the other is the interconnectedness at the level of behavior. 
+In the book **_[Networks, Crowds, and Markets: Reasoning about a Highly Connected World](http://www.cs.cornell.edu/home/kleinber/networks-book/)_**, the authors emphasized two main things of "connectedness": one is underlying structure of the network and the other is the interconnectedness at the level of behavior. 
 
 Human decisions are necessary and ubiquitous. As a tool to address situations when decisions are coming, game theory is widely used in many fields such as economics, political science, politics, and computer science, and can be used to model many real-world scenarios.
 
 Here's an outline of this blog:
 
-[toc]
+<!-- toc -->
 
 #### Definitions
 
