@@ -1,0 +1,27 @@
+# Header
+menu:
+  Home: /
+  Categories: /categories
+  Archives: /archives
+
+rss: "https://medium.com/@younghtyw"
+
+# Content
+excerpt_link: Read More
+fancybox: true
+mathjax:
+  enable: true
+  cdn: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
+
+katex:
+  enable: true
+  cdn:
+    css: https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+
+# Local search
+local_search:
+  enable: true
