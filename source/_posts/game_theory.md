@@ -17,7 +17,7 @@ Human decisions are necessary and ubiquitous. As a tool to address situations wh
 
 Here's an outline of this blog:
 
-<!-- toc -->
+[toc]
 
 #### Definitions
 
@@ -74,10 +74,10 @@ $$
 
 ***Mixed Strategy*** - when there is no Nash equilibria at all, we can make predictions about players’ behavior by enlarging the set of strategies to include the **possibility** of randomization; once players are allowed to behave randomly, one of John Nash’s main results establishes that equilibria always exist. For Player 1 choose a pure strategy and Player 2 choose with a probability q:
 $$
-\begin{align}
+\begin{aligned}
 E[P_H] = (−1)(q)+(1)(1−q) = 1−2q\\
 E[P_T] = (−1)(q)+(1)(1−q) = 1−2q
-\end{align}
+\end{aligned}
 $$
 ***Social Optimality*** - A choice of strategies — one by each player — is a social welfare maximizer (or socially optimal) if it maximizes the sum of the players’ payoffs. 
 
