@@ -4,7 +4,7 @@ date: 2019-05-20 19:49:30
 categories: tittle-tattle
 toc: true
 ---
-I disappeared for about one month. During most of these period time, I was running around in circles for my application for graduate application. 
+I disappeared for about one month. During most of these period time, I was running around in circles for my application for graduate education. 
 <!-- more -->
 I'm going to apply for universities in America next semester and I'm now lack of research experiences. So in early March, I tried to seek for a summer research opportunity. 
 
