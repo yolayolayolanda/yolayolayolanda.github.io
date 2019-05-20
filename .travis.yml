@@ -16,20 +16,15 @@ before_script:
 
 
 script: 
-  ## 配置好全局 git 用户信息
+  - hexo clean && hexo g && hexo d 
+
+  - cd ./public
+  - git init
   - git config --global user.name "yolayolayolanda"
   - git config --global user.email "yolayolayolanda@foxmail.com"
-
-  # 1. push 到 yolayolayolanda 仓库 
-  ## 将 _config.yml 中的字符串 "repo-url" 
-  ## 替换为 "https://${GH_TOKEN}@github.com/yolayolayolanda/yolayolayolanda.github.io.git" 
-  ## 使 Travis 服务器能顺利运行 hexo d 将 master 分支 push 到 github
-  - sed -i'' "s~repo-url~https://${GH_TOKEN}@github.com/yolayolayolanda/yolayolayolanda.github.io~" _config.yml 
-
-  ## 清除缓存、生成并在 Algolia 中索引、生成 service-worker.js
-  - hexo clean && hexo g 
-  ## 此过程包含了像百度直接提交链接的过程
-  - hexo d 
+  - git add .
+  - git commit -m "Travis build blog"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
 
 branches:
   only:
