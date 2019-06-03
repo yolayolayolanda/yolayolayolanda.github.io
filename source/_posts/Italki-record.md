@@ -13,6 +13,8 @@ She amazed me by her quick and content-rich speaking.
 
 I suddenly felt like, how can she be that great and how can I be better at speaking?
 
+<!-- more -->
+
 The fact is that, my speaking English is featured by nearly perfect pronunciation and terrible sentence-constructing. 
 
 And I thought my key problem is that,
