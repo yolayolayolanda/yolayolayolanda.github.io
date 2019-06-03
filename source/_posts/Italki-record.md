@@ -39,3 +39,13 @@ And then he patiently corrected my subtle pronunciation in a quite comfortable w
 He's a really good guy. I didn't expect to really have a friend there, especially such a nice one. But it just happed and I'm so lucky.
 
 What's more, I also booked a half-hour trial lesson of a carefully picked Professional English teacher. I'll update this after the lesson. 
+
+------
+
+I'm back.
+
+I have had the class, the teacher is good and patient. Actually, I have learned about most of the theories he taught me. But one critical thing I found during this class is that, the problem seems lay at **lacking things to say.**
+
+I'm lacking speaking materials, including: **words, phrases and ideas**.
+
+###### There's no doubt that I have to recite as much as possible.
