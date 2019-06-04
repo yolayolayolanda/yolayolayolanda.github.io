@@ -18,7 +18,7 @@ The longest 01 substring where number of 1 = number of 0.
 
 #### Algorithm
 
-In a substring, number of 1 = number of 0 $\iff $ `count[1] - count[0]` has no change at the beginning and the end of this substring.
+In a substring, number of 1 = number of 0 $\iff$ `count[1] - count[0]` has no change at the beginning and the end of this substring.
 
 <!-- more -->
 
