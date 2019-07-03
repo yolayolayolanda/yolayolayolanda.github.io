@@ -10,6 +10,8 @@ marked: true
 
 <!-- more -->
 
+Reference: [pytorch入坑一 | Tensor及其基本操作](https://zhuanlan.zhihu.com/p/36233589)
+
 <!-- toc -->
 
 #### Saving and Loading a model (Serialization)
@@ -38,6 +40,10 @@ marked: true
   ```
 
 #### Data Processing
+
+- ##### torch.item()
+
+  Return python number of the certain tensor.
 
 - ##### torch.numel(*input Tensor*) $\rightarrow$ int
 
@@ -300,7 +306,7 @@ tensor([[ 0.6580, -1.0969, -0.4614],
   tensor(15.)
   ```
 
-- ##### torch.trill(*input*, *diagonal=0*, *out=None*) → Tensor
+- ##### torch.tril(*input*, *diagonal=0*, *out=None*) → Tensor
 
   Returns the lower triangular part of the matrix (2-D tensor) or batch of matrices `input`, the other elements of the result tensor `out` are set to 0.
 
