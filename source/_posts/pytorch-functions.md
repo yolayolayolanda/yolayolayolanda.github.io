@@ -8,13 +8,13 @@ marked: true
 
 ## Commonly Used PyTorch Functions
 
+<!-- more -->
+
 <!-- toc -->
 
 #### Saving and Loading a model (Serialization)
 
 - ##### torch.save(*obj, f, pickle_module, pickle_protocol*)
-
-<!-- more -->
 
 > - **obj** – saved object
 > - **f** – a file-like object (has to implement write and flush) or a string containing a file name
