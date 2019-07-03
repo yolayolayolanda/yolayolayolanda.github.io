@@ -14,10 +14,12 @@ marked: true
 
 - ##### torch.save(*obj, f, pickle_module, pickle_protocol*)
 
-  > - **obj** – saved object
-  > - **f** – a file-like object (has to implement write and flush) or a string containing a file name
-  > - **pickle_module** – module used for pickling metadata and objects
-  > - **pickle_protocol** – can be specified to override the default protocol
+<!-- more -->
+
+> - **obj** – saved object
+> - **f** – a file-like object (has to implement write and flush) or a string containing a file name
+> - **pickle_module** – module used for pickling metadata and objects
+> - **pickle_protocol** – can be specified to override the default protocol
 
 - ##### torch.load(*f, map_location=None, pickle_module=<module 'pickle' from '/opt/conda/lib/python3.6/pickle.py'>, **pickle_load_args*)
 
