@@ -1,7 +1,7 @@
 ---
 title: Collection of Websites for Datasets
 date: 2019-04-07 02:52:32
-categories: DS&DL
+categories: Data
 mathjax: true
 ---
 
