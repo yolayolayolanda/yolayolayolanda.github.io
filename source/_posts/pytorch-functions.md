@@ -1,16 +1,17 @@
 ---
-title: pytorch_functions
+title: Commonly Used PyTorch Functions
 date: 2019-07-02 16:12:04
 categories: Deep Learning
 toc: true
 marked: true
 ---
 
-## Commonly Used PyTorch Functions
-
 <!-- more -->
 
-Reference: [pytorch入坑一 | Tensor及其基本操作](https://zhuanlan.zhihu.com/p/36233589)
+Reference: 
+
+- [pytorch入坑一 | Tensor及其基本操作](https://zhuanlan.zhihu.com/p/36233589)
+- [torchvision的理解和学习(翻译torchvision在pypi上的文档)](https://blog.csdn.net/tsq292978891/article/details/79403617)
 
 <!-- toc -->
 
@@ -38,6 +39,14 @@ Reference: [pytorch入坑一 | Tensor及其基本操作](https://zhuanlan.zhihu.
   torch.save(model_object.state_dict(), 'params.pkl')
   model_object.load_state_dict(torch.load('params.pkl'))
   ```
+
+- ##### torch.utils.data.DataLoader
+
+  > 该接口主要用来将自定义的数据读取接口的输出或者PyTorch已有的数据读取接口的输入按照batch size封装成Tensor，后续只需要再包装成Variable即可作为模型的输入，因此该接口有点承上启下的作用，比较重要。
+  >
+  > 
+  >
+  > - **torchvision.datasets**是继承torch.utils.data.Dataset的子类. 因此,可以使用torch.utils.data.DataLoader对它们进行多线程处理(python multiprocessing)
 
 #### Data Processing
 

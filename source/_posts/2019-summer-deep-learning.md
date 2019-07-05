@@ -1,12 +1,10 @@
 ---
-title: 2019-summer-deep_learning
+title: 2019-SUMMER-深度学习
 date: 2019-07-02 16:05:36
 categories: Deep Learning
 toc: true
 marked: true
 ---
-
-## 2019-SUMMER-深度学习
 
 ###### 前言：本篇用作记录小学期的深度学习课程
 
@@ -451,7 +449,104 @@ $$
 #### Back Propaganda 反向传播 
 
 - 包括了正向传播和反向传播
+
+- ###### 正向传播：
+
+  1. 输出
+  2. Loss
+
+- ###### 反向传播
+
+  1. 调整参数
+
+- ###### Sigmoid function
+
+  $$
+  \sigma (x = \frac{1}{1+e^{-x}})
+  $$
+
+  
+
+- ###### 矩阵 - 矩阵相乘的梯度
+
+  - 注意
+    - 维度
+    - 转置
+  - 
+
 - **调整对象**：参数
+
 - 预设条件来结束传播：
+
   - 目标损失函数的阈值
   - 迭代次数
+
+- Hidden layer: feature abstraction
+
+#### Perceptron 感知机
+
+- 两类的分类模型
+  $$
+  y=g(w\cdot x+b)
+  $$
+  y 是样本类别，x是输入的样本实力的特征向量，$g$ 是激活函数：
+  $$
+  g(Z) =\left\{ 
+  \begin{aligned}
+  +1 &&Z\ge\epsilon\\
+  -1 &&Z<\epsilon
+  \end{aligned}
+  \right.
+  $$
+
+$Z = w\cdot x + b $.
+
+-  Stochastic Gradient Descend
+  $$
+  \theta = \theta- \eta\nabla y
+  $$
+
+#### 小型神经网络案例
+
+**数据**：螺旋 spiral data（二维）
+
+##### 训练线性分类器
+
+- ###### 初始化参数取值: 随机初始化参数
+
+  - W, b!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+- ###### 计算每个样本的类分数
+
+  - ```
+    score = np.dot(X, W) + b
+    ```
+
+- ###### 计算损失函数：交叉熵
+
+  - $$
+    L = \frac{1}{N}\sum_iL_i+\frac{1}{2}\lambda\sum_k\sum_lW_{k,l}^2
+    $$
+
+    其中，$L_i = -\log \left( \frac{e^{f}y_i}{}\right)$
+
+- ###### Softmax 处理
+
+- ###### 反向传播梯度计算
+
+- ###### 运行线性分类器
+
+- ###### 可视化分类结果
+
+##### Neural Network
+
+
+
+
+
+#### RNN (Recurrent Neural Network)
+
+**目标数据**：序列数据
+
+
+
