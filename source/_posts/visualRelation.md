@@ -35,7 +35,7 @@ They designed a dataset directly for connecting language and vision using crowds
 
    ![image-20190420140244094](https://raw.githubusercontent.com/yolayolayolanda/yolayolayolanda.github.io/master/images/image-20190420140244094.png)
 
-5. **Quadratic explosion** of N objects and K relationships leads to $N^2K​$ detectors
+5. **Quadratic explosion** of N objects and K relationships leads to $N^2K$ detectors
 
 ##### Model
 
@@ -61,9 +61,9 @@ They designed a dataset directly for connecting language and vision using crowds
 - Combine the three output scores and define the **Ranking loss** by:
   $V(R_{ ⟨i, k, j⟩ },Θ|⟨O1,O2⟩) = P_i (O1)(z^T_k CNN(O1,O2) + s_k)P_j (O2)$
 
-  , where where $Θ​$ is the parameter set of {$z_k,s_k​$}. $z_k​$ and $s_k​$ are the parameters learnt to convert our CNN features to relationship likelihoods
+  , where where $Θ$ is the parameter set of {$z_k,s_k$}. $z_k$ and $s_k$ are the parameters learnt to convert our CNN features to relationship likelihoods
 
-  - Get a final score describing how well the $<object_1-predicate-object_2>​$ triple is.
+  - Get a final score describing how well the $<object_1-predicate-object_2>$ triple is.
 
 - Fine-tune both detectors jointly on a bigger dataset
 
@@ -91,7 +91,7 @@ For aiding strange triples
     $$
     , where *d(R, R’)* is the sum of cosine distances between two relationships
 
-    ![image-20190420172803979](/Users/yola/myGit/myblog/source/images/image-20190420172803979.png)
+    ![image-20190420172803979](https://raw.githubusercontent.com/yolayolayolanda/yolayolayolanda.github.io/master/images/image-20190420172803979.png)
 
   - Minimize the variance of sampled pairs(500K) of relationships
     $$
@@ -118,13 +118,13 @@ For aiding strange triples
 
 - Ranking loss function:
 
-  $C(Θ,W)= 􏰃 \max\{1−V(R,Θ|⟨O1,O2⟩)f(R,W)+\max_\limits{⟨O1',O2'⟩ \ne ⟨O1,O2⟩,R'\ne R} V (R′ , Θ|⟨O1′ , O2′ ⟩)f (R′ , W), 0\} ​$
+  $C(Θ,W)= 􏰃 \max\{1−V(R,Θ|⟨O1,O2⟩)f(R,W)+\max_\limits{⟨O1',O2'⟩ \ne ⟨O1,O2⟩,R'\ne R} V (R′ , Θ|⟨O1′ , O2′ ⟩)f (R′ , W), 0\} $
 
   ![image-20190420174426670](https://raw.githubusercontent.com/yolayolayolanda/yolayolayolanda.github.io/master/images/image-20190420174426670.png)
 
 - Total loss:
 
-  $\min_{Θ,W}{C(Θ, W) + λ_1L(W) + λ_2K(W)}​$
+  $\min_{Θ,W}{C(Θ, W) + λ_1L(W) + λ_2K(W)}$
 
 - Hold one train another strategy
 

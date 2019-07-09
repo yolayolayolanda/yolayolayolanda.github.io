@@ -19,7 +19,7 @@ mathjax: true
 
 #### Sliding-window detectors (brute force) Method
 
-![Sliding Window](https://raw.githubusercontent.com/yolayolayolanda/yolayolayolanda.github.io/master/images/1*BYSA3iip3Cdr0L_x5r468A.png)
+![Sliding Window](https://raw.githubusercontent.com/yolayolayolanda/yolayolayolanda.github.io/master/images/1_BYSA3iip3Cdr0L_x5r468A.png)
 
 - Scan from left and right and from up to down with windows of varied sizes and aspect ratios  (the ratio of the width to the height).
 
@@ -88,7 +88,7 @@ R-CNN needs many proposals (patches) to be accurate and many regions overlap wit
 
 R-CNN forwards every picture 2000 times(2000 patches (proposals, ROIs) , one patch one time), which is too expensive.
 
-![Fast R-CNN.1](https://raw.githubusercontent.com/yolayolayolanda/yolayolayolanda.github.io/master/images/1*Dd3-sugNKInTIv12u8cWkw.png)
+![Fast R-CNN.1](https://raw.githubusercontent.com/yolayolayolanda/yolayolayolanda.github.io/master/images/1_Dd3-sugNKInTIv12u8cWkw.png)
 
 **Steps: **(All steps are trained end-to-end with **multi-task losses** (classification loss and localization loss))
 
@@ -98,7 +98,7 @@ R-CNN forwards every picture 2000 times(2000 patches (proposals, ROIs) , one pat
 
 3. Wrap the patches: using **ROI pooling (Maximum pooling)**.
 
-   ![Fast R-CNN.2](https://raw.githubusercontent.com/yolayolayolanda/yolayolayolanda.github.io/master/images/1*LLP4tKGsYGgAx3uPfmGdsw.png)
+   ![Fast R-CNN.2](https://raw.githubusercontent.com/yolayolayolanda/yolayolayolanda.github.io/master/images/1_LLP4tKGsYGgAx3uPfmGdsw.png)
 
 4. FC layers.
 
@@ -184,12 +184,12 @@ Idea: locating a face when an eye is detected. Thus, we don't need that much pre
 
 In R-FCN, they add a convolutional network on the second branch (independent of ROIs) to do class detection: **score the regions of the feature maps on how much probability of them to belong to one target class**.
 
-> In R-FCN, all learnable weight layers are convolutional and are computed on the entire image. The last convolutional layer produces a bank of $k^2​$ *position-sensitive score maps* for each category, and thus has a $k^2(C + 1)​$-channel output layer with C object categories ($+1​$
+> In R-FCN, all learnable weight layers are convolutional and are computed on the entire image. The last convolutional layer produces a bank of $k^2$ *position-sensitive score maps* for each category, and thus has a $k^2(C + 1)$-channel output layer with C object categories ($+1$
 > for background). 
 
 **Steps**:
 
-1. By the added convolutional network (before the last layer), R-FCN generate $C+1​$ categories/channels/feature maps .
+1. By the added convolutional network (before the last layer), R-FCN generate $C+1$ categories/channels/feature maps .
 
 2. In the last convolutional layer, divide the categories/channels/feature maps into $k^2$ smaller regions. Eg: 3 $\times$ 3 regions.
 
@@ -250,7 +250,7 @@ Single shot detector uses $k$ anchors as the initial sliding-window. Then detect
 
    ***However, Faster R-CNN uses anchors and offsets to predict the ROIs (whether there is an object in the box). Here Single Shot uses it to directly predict the classification (the category to which the box belongs).***
 
-2. Then we use the convolution filter to extract $4+C+1​$ parameters to describe the shape and the category of each prediction of a specific location {4 coordinates, C classes + 1 background }. 
+2. Then we use the convolution filter to extract $4+C+1$ parameters to describe the shape and the category of each prediction of a specific location {4 coordinates, C classes + 1 background }. 
 
 ###### Advantage
 
