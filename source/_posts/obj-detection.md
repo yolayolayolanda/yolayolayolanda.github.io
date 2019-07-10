@@ -56,7 +56,7 @@ Region proposal method to create about 2000 ROIs.
 
 ![R-CNN.2](https://raw.githubusercontent.com/yolayolayolanda/yolayolayolanda.github.io/master/images/image-20190414151138150.png)
 
-![R-CNN.3](https://raw.githubusercontent.com/yolayolayolanda/yolayolayolanda.github.io/master/images/1*Wmw21tBUez37bj-1ws7XEw.png)
+![R-CNN.3](https://raw.githubusercontent.com/yolayolayolanda/yolayolayolanda.github.io/master/images/1_Wmw21tBUez37bj-1ws7XEw.png)
 
 1. Pre-train CNN for image classification.
 2. Fine-tune CNN for object detection. 
